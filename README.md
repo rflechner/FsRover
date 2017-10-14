@@ -6,9 +6,9 @@
 
 ## Technologies used for software
 
-- FSharp
-- Suave.io
-- WebSharper
+- [FSharp on linux](http://fsharp.org/use/linux/)
+- [Suave.io](https://suave.io)
+- [WebSharper](https://websharper.com)
 
 ## Hardware
 
@@ -20,5 +20,22 @@
 
 ## Wiring
 
-Waiting schemas, you can see photographies [here](images/hd)
+While waiting for the schemas (in progress), you can see photographies [here](images/hd)
+
+### GPIO
+
+#### Pins
+
+- Pin1: GPIO26
+- Pin2: GPIO19
+- Pin3: GPIO13
+- Pin4: GPIO6
+
+#### Physical actions
+
+- Forward: Pin1 and Pin3
+- Backward: Pin2 and Pin4
+- Left: Pin2 and Pin3
+- Right: Pin1 and Pin4
+
 
