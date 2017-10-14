@@ -18,4 +18,7 @@
 - [Camera module](https://hackspark.fr/fr/raspberry-pi-camera-noir-no-ir-filter-version-night-vision-version.html)
 - [A chassis](http://www.dx.com/p/16-in-1-smart-car-chassis-kit-for-arduino-black-yellow-153073)
 
+## Wiring
+
+Waiting schemas, you can see photographies [here](images/hd)
 
