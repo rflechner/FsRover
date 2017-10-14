@@ -42,9 +42,13 @@ module Site =
     open WebSharper.UI.Next.Html
 
     let HomePage ctx =
-        Templating.Main ctx EndPoint.Home "Home" [
-            h1 [text "Say Hi to the server!"]
-            div [client <@ Client.Main() @>]
+        Templating.Main ctx EndPoint.Home "FsRover" [
+            h1 [text "FsRover"]
+            h2 [text "Raspberry PI robot powered with FSharp"]
+            div [
+                p [ aAttr [attr.href "/swagger/v2/ui/index.html"] [text "Swagger of Suave REST API"] ]
+                p [ aAttr [attr.href "https://github.com/rflechner/FsRover"] [text "Source code"] ]
+            ]
         ]
 
     let PhotoPage (ctx:Context<EndPoint>) =
@@ -65,7 +69,8 @@ module Site =
     let AboutPage ctx =
         Templating.Main ctx EndPoint.About "About" [
             h1 [text "About"]
-            p [text "This is a template WebSharper client-server application."]
+            p [text "Made for fun by Flechner Romain."]
+            aAttr [ attr.href "https://twitter.com/rflechner" ] [ text "@rflechner" ]
         ]
 
     let Main =
@@ -167,13 +172,7 @@ module Site =
 
     let api = 
       swagger {
-        // For GET
-        for route in getting <| urlFormat "/api/subtract/%d/%d" subtract do
-          yield description Of route is "Subtracts two numbers"
-        // For POST
-        for route in posting <| urlFormat "/api/subtract/%d/%d" subtract do
-          yield description Of route is "Subtracts two numbers"
-
+        
         for route in getting <| urlFormat "/api/photo/%d/%d/%s" (downloadPhoto None) do
           yield description Of route is "Download a photo"
 
@@ -208,7 +207,7 @@ module Site =
                       bindings = [HttpBinding.create HTTP IPAddress.Any 8089us] }
 
       let rootPath = System.AppDomain.CurrentDomain.BaseDirectory
-      printfn "pathToAssembly %s" rootPath
+      printfn "Root directory: %s" rootPath
       let webSite = WebSharperAdapter.ToWebPart(Main, RootDirectory = rootPath)
       
       let routes = choose 
