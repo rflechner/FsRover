@@ -30,7 +30,9 @@ then
   mozroots --import --sync --quiet
 fi
 
-run $NUGET_EXE restore
+cd src
+run ../$NUGET_EXE restore
+cd ..
 run $NUGET_EXE Install FAKE -OutputDirectory packages -ExcludeVersion
 
 [ ! -e build.fsx ] && run $PAKET_EXE update
