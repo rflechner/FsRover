@@ -3,9 +3,7 @@
   open System
   #nowarn "9"
 
-  //https://github.com/rflechner/PiCamCV/blob/master/source/LibPiCamCV/PInvoke/CvInvokeRaspiCamCV.cs
-  //http://docs.opencv.org/2.4/modules/highgui/doc/reading_and_writing_images_and_video.html#cv.SetCaptureProperty
-  //http://docs.opencv.org/trunk/dd/d01/group__videoio__c.html#gsc.tab=0
+  // This file is a port of https://github.com/neutmute/PiCamCV/blob/master/source/LibPiCamCV/PInvoke/CvInvokeRaspiCamCV.cs
 
   [<StructLayout(LayoutKind.Sequential)>]
   type PiCameraConfig =

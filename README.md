@@ -9,6 +9,8 @@
 - [FSharp on linux](http://fsharp.org/use/linux/)
 - [Suave.io](https://suave.io)
 - [WebSharper](https://websharper.com)
+- [libraspicamcv](https://github.com/robidouille/robidouille/tree/master/raspicam_cv)
+- [OpenCvInterop.fs is port of CvInvokeRaspiCamCV.cs in PiCamCV](https://github.com/neutmute/PiCamCV/blob/master/source/LibPiCamCV/PInvoke/CvInvokeRaspiCamCV.cs)
 
 ## Hardware
 
