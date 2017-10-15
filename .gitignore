@@ -219,3 +219,5 @@ _Pvt_Extensions
 src/\.idea/\.idea\.FsRover/\.idea/
 
 src/\.idea/\.idea\.FsRover/
+
+\.fake/
