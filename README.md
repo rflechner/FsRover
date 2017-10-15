@@ -38,4 +38,8 @@ While waiting for the schemas (in progress), you can see photographies [here](im
 - Left: Pin2 and Pin3
 - Right: Pin1 and Pin4
 
+## Self hosted web site
+
+![robot_drive3](images/robot_drive3.gif)
+
 
