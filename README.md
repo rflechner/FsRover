@@ -2,6 +2,8 @@
 
 ## Raspberry PI robot powered with FSharp
 
+I made this small project to demonstrate that FSharp can be used for robotic and domotics projects.
+
 ![robot1](images/robot1-min.jpg)
 
 ## Technologies used for software
