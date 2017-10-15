@@ -46,4 +46,9 @@ While waiting for the schemas (in progress), you can see photographies [here](im
 
 ![robot_drive3](images/robot_drive3.gif)
 
+### Run on your RPI
+
+- Build locally with `build.bat`
+- Upload `release` folder up to your RPI
+- Run `sudo mono FsRover.Web.exe`
 
